@@ -23,3 +23,5 @@ jobs:
         echo $PASS
         docker build . --file Dockerfile --tag spradip/github:latest
         docker login -u $USER -p $PASS
+
+        docker push spradip/github:latest
